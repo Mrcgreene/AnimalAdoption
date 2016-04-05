@@ -12,16 +12,23 @@ namespace AnimalAdoption
         Wallet wallet;
         string name;
         string pet;
+        double amountPaid;
+        double myMoney;
+
 
         public Adopter()
         {
-            animal = new Animal();
-            wallet = new Wallet();
+            //animal = new Animal();
+            wallet = new Wallet(500);
 
         }
-
+     
         public void PurchaseAnimal()
         {
+                       
+            amountPaid = animalCost;                    //fix
+
+            //removeAnimal from list
 
         }
     }

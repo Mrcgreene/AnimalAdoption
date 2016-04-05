@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace AnimalAdoption
 {
-    public class Dog : Animal
+    interface IAdoptionIntake
     {
-
+        void AddAnimals();
     }
 }

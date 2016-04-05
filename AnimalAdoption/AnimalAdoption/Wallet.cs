@@ -8,17 +8,24 @@ namespace AnimalAdoption
 {
     public class Wallet
     {
-        double moneyBalance;
+        public double moneyBalance;
+         
 
+        public Wallet(double myMoney)
+        {
+            moneyBalance = myMoney;
+        }
 
         public void AddMoney()
         {
-
+            moneyBalance += ;                       //fix
+            Console.WriteLine();
         }
 
         public void RemoveMoney()
         {
-
+            moneyBalance -= ;                       //fix
+            Console.WriteLine();
         }
     }
 }

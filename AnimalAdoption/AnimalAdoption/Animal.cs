@@ -6,14 +6,22 @@ using System.Threading.Tasks;
 
 namespace AnimalAdoption
 {
-    public class Animal
+    public abstract class Animal
     {
-        bool shots;
-        string name;
-        string animalType;
-        string foodType;
+        public bool shots;
+        public string name;
+        public string animalType;
+        public string foodType;
+        public double foodNeedInCups;
+        public double animalCost;
 
+            
+        public Animal()
+        {
+            
+        }
 
+     
         public void WeeklyFoodIntake()
         {
 
