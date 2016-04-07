@@ -6,42 +6,58 @@ using System.Threading.Tasks;
 
 namespace AnimalAdoption
 {
-    public class DonationProcess : IAdoptionIntake
+    public class DonationProcess
     {
 
         public DonationProcess()
         {
         }
 
-        public void AddAnimals()
+        public string DonateAnimal()
         {
             string yourPetsName;
-            //int choice;
+            string yourPetType;
+            bool yourPetShots;
+            string yourPetFoodType;
+            double yourPetDailyFoodInCups;
+            double yourSuggestAnimalCost;
+
+
             Console.WriteLine("Please give me the name of your animal");
             yourPetsName = Console.ReadLine();
-            HumaneSociety.            /*
-            Console.WriteLine("Is " + yourPetsName + " a:");
-            Console.WriteLine("(1) Dog");
-            Console.WriteLine("(2) Cat");
-            Console.WriteLine("(3) Rabit");
-            Console.WriteLine("(4) Turtle");
-            Console.WriteLine("(5) Snake");
-            Console.WriteLine("(6) Hamster"); 
-            Console.WriteLine("(7) other");
-            choice = Convert.ToInt32(Console.ReadLine());
-            if(choice == 1)
-            {
-                //add dog to list
-            }
-            else
-            {
-                Console.WriteLine("We can only take dogs at this point due to only having dog cages");
-                Console.WriteLine("We are sorry. You are welcome to call us back and check if things change");
-            }
-            */
+            //add name to list of animals ....randomize other info from constructor?
+            Console.WriteLine("Thank you for your kindness. Another family will be happy from your donation.");
+            Console.WriteLine(yourPetsName + " will be examined and prepared for adoption over the next few days.");
+            
+            Console.ReadLine();
+            return yourPetsName;
 
-            Console.WriteLine("Thank you for your donation. Another family will be happy with " + yourPetsName);
-            //add name to list of animals ....randomize other info from constructor
+
         }
+
+        
+
+        /*
+            Console.WriteLine("What kind of animal is your " + yourPetsName +"?");
+            yourPetType = Console.ReadLine();
+            return yourPetType;
+
+            Console.WriteLine(yourPetsName + " " + "has been vaccinated? True or False?");
+            yourPetShots = Convert.ToBoolean(Console.ReadLine());
+            
+            Console.WriteLine("What kind of food does " + yourPetsName + " eat?");
+            yourPetFoodType = Console.ReadLine();
+            return yourPetFoodType;
+
+            Console.WriteLine("How many cups of food does " + yourPetsName + " eat a day?");
+            yourPetDailyFoodInCups = Convert.ToDouble(Console.ReadLine());
+            return yourPetDailyFoodInCups;
+
+            Console.WriteLine("What kind of food does " + yourPetsName + " eat?");
+            yourSuggestAnimalCost = Convert.ToDouble(Console.ReadLine());
+            return yourSuggestAnimalCost;
+            
+            */
     }
+
 }

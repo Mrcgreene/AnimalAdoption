@@ -11,14 +11,10 @@ namespace AnimalAdoption
         Animal animal;
         int cageNumber;
 
-        
-        
-            public Cage(int CageNumber)
+        public Cage(int CageNumber)
         {
             cageNumber = CageNumber;
             //animal = new Dogs();
         }
-
-        
     }
 }

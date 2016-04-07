@@ -16,20 +16,17 @@ namespace AnimalAdoption
         double myMoney;
 
 
-        public Adopter()
+        public Adopter(string Name, string Pet)
         {
-            //animal = new Animal();
-            wallet = new Wallet(500);
-
+            wallet = new Wallet();
+            pet = Pet;
         }
-     
-        public void PurchaseAnimal()
-        {
-                       
-            amountPaid = animalCost;                    //fix
 
-            //removeAnimal from list
 
-        }
+        
+
+
+
+
     }
 }

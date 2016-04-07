@@ -9,23 +9,31 @@ namespace AnimalAdoption
     public class Wallet
     {
         public double moneyBalance;
-         
+        public double number1;
+      
 
-        public Wallet(double myMoney)
+
+        public Wallet()
         {
-            moneyBalance = myMoney;
         }
 
-        public void AddMoney()
+        public double StartingMoney()
         {
-            moneyBalance += ;                       //fix
-            Console.WriteLine();
+            moneyBalance = 500.00;
+            return moneyBalance;
         }
 
-        public void RemoveMoney()
+        public double RemoveMoney()
         {
-            moneyBalance -= ;                       //fix
-            Console.WriteLine();
+            moneyBalance -= number1;
+            return moneyBalance;
+            
         }
+
+        public void MoneyRemaining()
+        {
+            Console.WriteLine("You currently have " + moneyBalance + " in your pocket");
+        }
+
     }
 }

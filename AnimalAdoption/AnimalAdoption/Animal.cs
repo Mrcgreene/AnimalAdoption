@@ -12,16 +12,16 @@ namespace AnimalAdoption
         public string name;
         public string animalType;
         public string foodType;
-        public double foodNeedInCups;
+        public double dailyFoodInCups;
         public double animalCost;
 
-            
+
         public Animal()
         {
-            
+
         }
 
-     
+
         public void WeeklyFoodIntake()
         {
 
