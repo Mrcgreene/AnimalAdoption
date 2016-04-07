@@ -50,6 +50,7 @@ namespace AnimalAdoption
                 GiveShots();
                 Console.WriteLine("We can now begin your selection and purchase process.");
                 PurchaseAnimals();
+                CurrentAnimals();
                 Departure();
             }
             if (decision == 2)
@@ -112,10 +113,9 @@ namespace AnimalAdoption
             Console.ReadLine();
         }
 
-        
         public void PurchaseAnimals()
         {
-            // this function should be right after the list of available animals in shown
+
             Adopter melvin = new Adopter("Melvin", "None");
             Console.WriteLine("Which animal are you looking to purchase?");
             string selectedPet = Console.ReadLine();
@@ -125,9 +125,8 @@ namespace AnimalAdoption
                 {
                     Console.WriteLine("You have adopted " + animal.name + ".");
                     Console.WriteLine("You payment due is " + "$" + animal.animalCost);
-                    Console.WriteLine(animal.name + " needs " + animal.dailyFoodInCups + " cups of food each day. We have fed them  " + animal.foodType);
+                    Console.WriteLine(animal.name + " needs " + animal.dailyFoodInCups + " cups of food each day. We have fed them " + animal.foodType +".");
                     shelterAnimals.Remove(animal);
-                    
                     //add this same instance to Adopter petname
                     //replace "none" in adopter pet to animal.name
                 }
@@ -135,7 +134,9 @@ namespace AnimalAdoption
                 {
                     Console.WriteLine("That pet does not appear on the list");
                 }
+                break;
             }
+            Console.ReadLine();
         }
 
         public void CheckShots()
@@ -163,9 +164,6 @@ namespace AnimalAdoption
             }
             Console.ReadKey();
         }
-
-        
-
 
         public void AddDonatedPetToList()
         {

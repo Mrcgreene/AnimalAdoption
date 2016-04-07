@@ -25,7 +25,7 @@ namespace AnimalAdoption
 
             Console.WriteLine("Please give me the name of your animal");
             yourPetsName = Console.ReadLine();
-            //add name to list of animals ....randomize other info from constructor?
+            //add name to list of animals ....but have to figure out if randomize other info from constructor or?
             Console.WriteLine("Thank you for your kindness. Another family will be happy from your donation.");
             Console.WriteLine(yourPetsName + " will be examined and prepared for adoption over the next few days.");
             
